@@ -1,0 +1,91 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "license": "ISC",
+  "private": true,
+  "description": "Frontend of GPE app",
+  "author": "Jules Bourdalé <jbourdale@advanced-schema.com>",
+  "keywords": [
+    "gpe",
+    "etna",
+    "jbourdale"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@rendu-git.etna-alternance.net:module-5130/activity-30494/group-690332.git"
+  },
+  "scripts": {
+    "start": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "vue-cli-service test"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
+    "@vuejs-community/vue-filter-date-format": "^1.6.2",
+    "@vuejs-community/vue-filter-date-parse": "^1.1.5",
+    "axios": "^0.19.2",
+    "bootstrap": "4.3.1",
+    "bootstrap-vue": "2.0.0-rc.15",
+    "chart.js": "2.8.0",
+    "core-js": "2.6.5",
+    "file-saver": "^2.0.2",
+    "flatpickr": "4.5.7",
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1",
+    "nouislider": "13.1.4",
+    "register-service-worker": "1.6.2",
+    "rich-text": "^4.0.0",
+    "sharedb": "^1.0.0-beta.23",
+    "socket.io-client": "^2.2.0",
+    "vue": "2.6.6",
+    "vue-chartjs": "3.4.2",
+    "vue-clipboard2": "0.3.0",
+    "vue-flatpickr-component": "8.1.2",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "3.0.1",
+    "vue2-transitions": "0.3.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-plugin-pwa": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "2.6.6"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint"
+    ]
+  }
+}
